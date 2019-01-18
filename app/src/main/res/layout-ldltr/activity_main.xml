@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE android.support.constraint.ConstraintLayout
+    [<!ELEMENT android.support.constraint.ConstraintLayout (EditText|Button|TextView)*>
+        <!ATTLIST android.support.constraint.ConstraintLayout
+            xmlns:android CDATA #REQUIREDxmlns:app CDATA #REQUIRED
+            xmlns:tools CDATA #REQUIRED
+            android:layout_width CDATA #REQUIRED
+            android:layout_height CDATA #REQUIRED
+            tools:context CDATA #REQUIRED>
+
+        <!ELEMENT EditText (#PCDATA)>
+        <!ATTLIST EditTextandroid:id CDATA #REQUIRED
+            android:layout_width CDATA #REQUIRED
+            android:layout_height CDATA #REQUIREDandroid:layout_marginStart CDATA #REQUIRED
+            android:layout_marginEnd CDATA #REQUIRED
+            android:ems CDATA #REQUIRED
+            android:hint CDATA #REQUIRED
+            android:inputType CDATA #REQUIRED
+
+            app:layout_constraintBottom_toBottomOf CDATA #REQUIRED
+            app:layout_constraintEnd_toStartOf CDATA #REQUIRED
+            app:layout_constraintHorizontal_bias CDATA #REQUIRED
+            app:layout_constraintStart_toStartOf CDATA #REQUIRED
+            app:layout_constraintTop_toTopOf CDATA #REQUIRED
+            app:layout_constraintVertical_bias CDATA #REQUIRED
+            >
+
+        <!ELEMENT Button (#PCDATA)>
+        <!ATTLIST Buttonandroid:id CDATA #REQUIRED
+            android:layout_width CDATA #REQUIRED
+            android:layout_height CDATA #REQUIRED
+            android:layout_marginEnd CDATA #REQUIRED
+            android:onClick CDATA #REQUIRED
+            android:text CDATA #REQUIRED
+            app:layout_constraintBaseline_toBaselineOf CDATA #REQUIRED
+            app:layout_constraintEnd_toEndOf CDATA #REQUIRED
+            app:layout_constraintHorizontal_bias CDATA #REQUIRED
+            app:layout_constraintStart_toEndOf CDATA #REQUIRED>
+
+        <!ELEMENT TextView (#PCDATA)>
+        <!ATTLIST TextViewandroid:id CDATA #REQUIRED
+            android:layout_width CDATA #REQUIRED
+            android:layout_height CDATA #REQUIRED
+            android:layout_marginStart CDATA #REQUIRED
+            android:layout_marginBottom CDATA #REQUIRED
+            android:textSize CDATA #REQUIRED
+            android:text CDATA #REQUIRED
+            app:layout_constraintBottom_toTopOf CDATA #REQUIRED
+            app:layout_constraintStart_toStartOf CDATA #REQUIRED>]
+
+    >
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/edit_message"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="sendMessage"
+        android:text="@string/button_send"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editText" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/welcome_text"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
