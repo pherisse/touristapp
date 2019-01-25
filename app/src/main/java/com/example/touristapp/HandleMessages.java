@@ -8,8 +8,6 @@ import com.google.firebase.messaging.RemoteMessage;
 import static com.example.touristapp.MainActivity.TAG;
 
 public class HandleMessages extends FirebaseMessagingService {
-    public HandleMessages() {
-    }
 
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {

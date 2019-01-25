@@ -1,12 +1,11 @@
 package com.example.touristapp;
-
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import com.ad4screen.sdk.activities.A4SActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends A4SActivity {
 
     public final static String EXTRA_MESSAGE = "com.example.touristapp.EXTRA_MESSAGE";
     public final static String TAG = "MainActivity";

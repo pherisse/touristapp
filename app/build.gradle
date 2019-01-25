@@ -38,6 +38,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.google.firebase:firebase-core:16.0.6'
     implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.ad4screen.sdk:A4SSDK:3.8.3'
+    implementation 'com.ad4screen.sdk:plugin-firebase-messaging:2.6.0'
 }
 
 apply plugin: 'com.google.gms.google-services'

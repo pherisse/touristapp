@@ -1,54 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE android.support.constraint.ConstraintLayout
-    [<!ELEMENT android.support.constraint.ConstraintLayout (EditText|Button|TextView)*>
-        <!ATTLIST android.support.constraint.ConstraintLayout
-            xmlns:android CDATA #REQUIREDxmlns:app CDATA #REQUIRED
-            xmlns:tools CDATA #REQUIRED
-            android:layout_width CDATA #REQUIRED
-            android:layout_height CDATA #REQUIRED
-            tools:context CDATA #REQUIRED>
-
-        <!ELEMENT EditText (#PCDATA)>
-        <!ATTLIST EditTextandroid:id CDATA #REQUIRED
-            android:layout_width CDATA #REQUIRED
-            android:layout_height CDATA #REQUIREDandroid:layout_marginStart CDATA #REQUIRED
-            android:layout_marginEnd CDATA #REQUIRED
-            android:ems CDATA #REQUIRED
-            android:hint CDATA #REQUIRED
-            android:inputType CDATA #REQUIRED
-
-            app:layout_constraintBottom_toBottomOf CDATA #REQUIRED
-            app:layout_constraintEnd_toStartOf CDATA #REQUIRED
-            app:layout_constraintHorizontal_bias CDATA #REQUIRED
-            app:layout_constraintStart_toStartOf CDATA #REQUIRED
-            app:layout_constraintTop_toTopOf CDATA #REQUIRED
-            app:layout_constraintVertical_bias CDATA #REQUIRED
-            >
-
-        <!ELEMENT Button (#PCDATA)>
-        <!ATTLIST Buttonandroid:id CDATA #REQUIRED
-            android:layout_width CDATA #REQUIRED
-            android:layout_height CDATA #REQUIRED
-            android:layout_marginEnd CDATA #REQUIRED
-            android:onClick CDATA #REQUIRED
-            android:text CDATA #REQUIRED
-            app:layout_constraintBaseline_toBaselineOf CDATA #REQUIRED
-            app:layout_constraintEnd_toEndOf CDATA #REQUIRED
-            app:layout_constraintHorizontal_bias CDATA #REQUIRED
-            app:layout_constraintStart_toEndOf CDATA #REQUIRED>
-
-        <!ELEMENT TextView (#PCDATA)>
-        <!ATTLIST TextViewandroid:id CDATA #REQUIRED
-            android:layout_width CDATA #REQUIRED
-            android:layout_height CDATA #REQUIRED
-            android:layout_marginStart CDATA #REQUIRED
-            android:layout_marginBottom CDATA #REQUIRED
-            android:textSize CDATA #REQUIRED
-            android:text CDATA #REQUIRED
-            app:layout_constraintBottom_toTopOf CDATA #REQUIRED
-            app:layout_constraintStart_toStartOf CDATA #REQUIRED>]
-
-    >
+<!DOCTYPE android.support.constraint.ConstraintLayout>
 
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"

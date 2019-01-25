@@ -4,4 +4,6 @@
     <string name="button_send">Send</string>
     <string name="welcome_text">Hello !</string>
     <string name="token_check">Check Token</string>
+    <string name="acc_partner_id">testaccengage5e9fc22e5db464c</string>
+    <string name="acc_private_key">ee082062e5049ddda71d0036ff566f8023d6f865</string>
 </resources>
